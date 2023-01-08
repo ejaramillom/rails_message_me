@@ -4,6 +4,7 @@ class ChatroomController < ApplicationController
   # GET /chatroom or /chatroom.json
   def index
     @chatroom = Chatroom.all
+    @messages = Message.all
   end
 
   # GET /chatroom/1 or /chatroom/1.json
