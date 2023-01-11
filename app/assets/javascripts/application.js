@@ -27,6 +27,12 @@ $(document).on('turbolinks:load', function() {
             ;
         })
     ;
+    scroll_bottom();
 })
 
+const scroll_bottom = () => {
+    if ($('#messages').length > 0) {
+        $('#messages').scrollTop($('#messages')[0].scrollHeight);
+    }
+}
 
